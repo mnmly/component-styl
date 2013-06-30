@@ -31,7 +31,7 @@ describe("Component Stylus", function () {
     builder.use(componentStylus);
     
     builder.build(function (err, res) {
-      expect(res.css).to.eql('body {\n  background: #000;\n}\n');
+      expect(res.css).to.eql('body {\n  background: #000;\n}');
       done()
     });
   });
@@ -42,19 +42,9 @@ describe("Component Stylus", function () {
     builder.use(componentStylus);
     
     builder.build(function (err, res) {
-      expect(res.css).to.eql('body {\n  background: #000;\n}\n');
+      expect(res.css).to.eql('body {\n  background: #000;\n}');
       done()
     });
   });
 
-  it('should build stylus in a component with imports into css', function (done) {
-    var builder = new Builder(__dirname + '/support/with-imports');
-
-    builder.use(componentStylus);
-
-    builder.build(function (err, res) {
-      expect(res.css).to.eql('body {\n  background: #000;\n}\n');
-      done();
-    });
-  });
 })
