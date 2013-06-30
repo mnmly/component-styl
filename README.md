@@ -1,7 +1,6 @@
-# component-stylus
-[![Build Status](https://travis-ci.org/deedubs/component-stylus.png)](https://travis-ci.org/deedubs/component-stylus)
+# component-styl
 
-Seemlessly use stylus in your components.
+Seemlessly use `styl` in your components.
 
 ## Usage
 
@@ -20,7 +19,7 @@ Seemlessly use stylus in your components.
 // builder.js
 var fs = require('fs')
   , Builder = require('component-builder')
-  , c7tStylus = require('component-stylus');
+  , c7tStylus = require('component-styl');
 
 var builder = new Builder(__dirname);
 
@@ -36,3 +35,8 @@ builder.build(function(err, res){
   
 ````
 
+Or use it as command line plugin
+
+```
+$ component build --use component-styl
+```
