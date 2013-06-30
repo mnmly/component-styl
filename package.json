@@ -1,20 +1,20 @@
 {
-  "name": "component-stylus",
+  "name": "component-styl",
   "version": "1.1.3",
-  "description": "Transpiles stylus for component",
+  "description": "Transpiles styl for component",
   "main": "index.js",
   "scripts": {
     "test": "make test"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/deedubs/component-stylus.git"
+    "url": "git://github.com/mnmly/component-styl.git"
   },
   "keywords": [
     "component",
-    "stylus"
+    "styl"
   ],
-  "author": "Dan Williams <me@deedubs.com>",
+  "author": "Hiroaki Yamane <i.am@mnmly.com>",
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
