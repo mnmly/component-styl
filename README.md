@@ -24,7 +24,7 @@ var fs = require('fs')
 var builder = new Builder(__dirname);
 
 builder.use(c7tStylus());
-// -OR-
+// -OR- pass options to styl
 builder.use(c7tStylus({whitespace:false}));
 
 builder.build(function(err, res){
