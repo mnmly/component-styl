@@ -23,7 +23,9 @@ var fs = require('fs')
 
 var builder = new Builder(__dirname);
 
-builder.use(c7tStylus);
+builder.use(c7tStylus());
+// -OR- pass options to styl
+builder.use(c7tStylus({whitespace:false}));
 
 builder.build(function(err, res){
   if (err) throw err;
@@ -31,12 +33,3 @@ builder.build(function(err, res){
   fs.writeFileSync('public/package.js', res.require + res.js);
   fs.writeFileSync('public/package.css', res.css);
 });
-
-  
-````
-
-Or use it as command line plugin
-
-```
-$ component build --use component-styl
-```
