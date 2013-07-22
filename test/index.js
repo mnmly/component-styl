@@ -47,12 +47,12 @@ describe("Component Stylus", function () {
     });
   });
   
-  it('should be able to build css without whitespace', function(done){
-    var builder = new Builder(__dirname + '/support/without-whitespace');
-    builder.use(componentStylus({whitespace: false}));
+  it('should be able to build css with options', function(done){
+    var builder = new Builder(__dirname + '/support/with-options');
+    builder.use(componentStylus({whitespace: false, compress: true}));
 
     builder.build(function (err, res) {
-      expect(res.css).to.eql('body {\n  color: rgba(255, 255, 255, 0.5);\n}');
+      expect(res.css).to.eql('body{color:rgba(255, 255, 255, 0.5);}');
       done()
       
     })
