@@ -4,7 +4,7 @@ var Builder = require('component-builder')
   , componentStyl = require('../');
  
 
-describe("Component Stylus", function () {
+describe("Component Styl", function () {
   
   it('should pass-though if there are no styles', function (done) {
     var builder = new Builder(__dirname + '/support/no-styles');
