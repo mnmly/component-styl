@@ -23,7 +23,8 @@
     "batch": "~0.3.0",
     "styl": "~0.2.2",
     "mocha": "~1.11.0",
-    "expect.js": "~0.2.0"
+    "expect.js": "~0.2.0",
+    "rework-vars": "~1.0.1"
   },
   "devDependencies": {
     "component-builder": "~0.8.3",
