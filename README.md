@@ -19,11 +19,22 @@ Seemlessly use `styl` in your components.
 // builder.js
 var fs = require('fs')
   , Builder = require('component-builder')
-  , c7tStylus = require('component-styl');
+  , reworkVars = require('rework-vars')
+  , componentStyl = require('component-styl');
 
 var builder = new Builder(__dirname);
 
-builder.use(c7tStylus);
+// Use rework plugins
+componentstyl.use(reworkvars());
+
+// Set whitespace false
+componentstyl.whitespace = false;
+
+// Set compress true
+componentstyl.compress = true;
+
+builder.use(componentStyl);
+
 
 builder.build(function(err, res){
   if (err) throw err;

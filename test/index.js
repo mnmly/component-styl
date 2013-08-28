@@ -64,7 +64,7 @@ describe("Component Styl", function () {
   it('should build styl with rework-vars plugin', function(done) {
 
     var builder = new Builder(__dirname + '/support/with-plugin');
-    componentStyl.plugins = [vars];
+    componentStyl.plugins = [vars()];
     builder.use(componentStyl);
     builder.build(function(err, res){
       expect(res.css).to.eql(':root {\n  var-main-color: #000;\n}\n\nbody {\n  background: #000;\n}');

@@ -1,6 +1,6 @@
 {
   "name": "component-styl",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Transpiles styl for component",
   "main": "index.js",
   "scripts": {
